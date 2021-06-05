@@ -1,7 +1,6 @@
 <?php
-
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\Mahasiswacontroller;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,5 +15,4 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-
-Route::resource('mahasiswa', MahasiswaController::class);
+Route::get('/buku0042',[Mahasiswacontroller::Class,'buku0042']);
